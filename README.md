@@ -1,3 +1,3 @@
-# [LeetCode](https://leetcode.com/problemset/all/)
+# LeetCode
 
 [Top-interview-questions](https://leetcode.com/problemset/top-interview-questions/)
