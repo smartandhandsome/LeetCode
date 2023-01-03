@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 class Solution {
     public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
@@ -11,10 +8,10 @@ class Solution {
         map.put('C', 100);
         map.put('D', 500);
         map.put('M', 1000);
-
+        int len = s.length();
         int answer = 0;
         int prev = 0;
-        for (int i = s.length() - 1; i >= 0; i--) {
+        for (int i = len - 1; i >= 0; i--) {
             int temp = map.get(s.charAt(i));
             if (prev > temp) {
                 answer -= prev;
