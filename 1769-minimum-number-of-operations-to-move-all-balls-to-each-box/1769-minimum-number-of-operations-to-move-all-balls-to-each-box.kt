@@ -15,11 +15,9 @@ class Solution {
         if (boxes[0] == '1') {
             left++
         }
-        println("$sum, $left, $right")
         for (i in 1..<boxes.length) {
 
             sum = sum + left - right
-            println("$sum, $left, $right")
             ret[i] = sum
 
             if (boxes[i] == '1') {
