@@ -13,7 +13,9 @@ class Solution {
                 return new int[0][0];
             }
 
-            answer[low / 3] = new int[]{nums[low], nums[low + 1], nums[high]};
+            answer[low / 3][0] = nums[low];
+            answer[low / 3][1] = nums[low + 1];
+            answer[low / 3][2] = nums[high];
             low += 3;
             high += 3;
         }
